@@ -35,7 +35,7 @@ class MonitorThread(threading.Thread):
     def __init__(self, app=None, *args, **kwargs):
         self._app = app
         self.log = logging.getLogger('monitor')
-        super().__init__(*args, **kwargs)
+        super(self).__init__(*args, **kwargs)
 
     def run(self):
         self._state = self._app.events.State()
@@ -98,7 +98,7 @@ class MonitorThread(threading.Thread):
 class WorkerMonitoringThread(threading.Thread):
     def __init__(self, app=None, *args, **kwargs):
         self._app = app
-        super().__init__(*args, **kwargs)
+        super(self).__init__(*args, **kwargs)
 
     def run(self):
         while True:
