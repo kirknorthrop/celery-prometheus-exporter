@@ -96,7 +96,7 @@ class MonitorThread(threading.Thread):
 
 
 class WorkerMonitoringThread(threading.Thread):
-    def __init__(self, *args, app=None, **kwargs):
+    def __init__(self, app=None, *args, **kwargs):
         self._app = app
         super().__init__(*args, **kwargs)
 
