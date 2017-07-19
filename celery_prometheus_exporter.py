@@ -32,7 +32,7 @@ class MonitorThread(threading.Thread):
     exposed from Celery using its eventing system.
     """
 
-    def __init__(self, *args, app=None, **kwargs):
+    def __init__(self, app=None, *args, **kwargs):
         self._app = app
         self.log = logging.getLogger('monitor')
         super().__init__(*args, **kwargs)
