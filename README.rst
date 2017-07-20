@@ -2,6 +2,9 @@
 celery-prometheus-exporter
 ==========================
 
+Python v2.7 Fork
+================
+
 celery-prometheus-exporter is a little exporter for Celery related metrics in
 order to get picked up by Prometheus. As with other exporters like
 mongodb\_exporter or node\_exporter this has been implemented as a
